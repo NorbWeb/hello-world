@@ -1,11 +1,11 @@
 {
     "name":"PWA Hello World",
     "short_name":"PWA",
-    "start_url":"index.html",
+    "start_url":"https://norbweb.github.io/hello-world/",
     "display":"standalone",
     "background_color":"#5900b3",
     "theme_color":"black",
-    "scope": ".",
+    "scope": "/",
     "description":"Test Seite für PWA",
     "icons":[
     {
