@@ -4,20 +4,20 @@ function myFunction() {
 }
 
 
-window.addEventListener('load', () => {
-  registerSW();
-});
+// window.addEventListener('load', () => {
+//   registerSW();
+// });
 
-// Register the Service Worker
-async function registerSW() {
-  if ('serviceWorker' in navigator) {
-    try {
-      await navigator
-            .serviceWorker
-            .register('serviceworker.js');
-    }
-    catch (e) {
-      console.log('SW registration failed');
-    }
-  }
-}
+// // Register the Service Worker
+// async function registerSW() {
+//   if ('serviceWorker' in navigator) {
+//     try {
+//       await navigator
+//             .serviceWorker
+//             .register('serviceworker.js');
+//     }
+//     catch (e) {
+//       console.log('SW registration failed');
+//     }
+//   }
+// }
