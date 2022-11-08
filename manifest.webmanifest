@@ -1,6 +1,6 @@
 {
     "name":"PWA Hello World",
-    "short_name":"PWA",
+    "short_name":"Hello World",
     "start_url":"/hello-world/",
     "scope": "/hello-world/",
     "display":"standalone",
