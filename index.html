@@ -9,9 +9,12 @@
        Progressive Web App -->
     <meta name="apple-mobile-web-app-status-bar" content="#aa7700" />
     <meta name="theme-color" content="black" />
+
     <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
+
     <!-- Manifest File link -->
+    <link rel="canonical" href="https://norbweb.github.io/hello-world/" />
     <link rel="manifest" href="/hello-world/manifest.json" />
   </head>
   <body>
@@ -22,19 +25,10 @@
       <div id="text" class="display">You shall not pass!</div>
     </div>
     <script>
-      window.addEventListener("load", () => {
-        registerSW();
-      });
-
-      // Register the Service Worker
-      async function registerSW() {
-        if ("serviceWorker" in navigator) {
-          try {
-            await navigator.serviceWorker.register("serviceworker.js");
-          } catch (e) {
-            console.log("SW registration failed");
-          }
-        }
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register("/hello-world/serviceworker.js", {
+          scope: "/hello-world/",
+        });
       }
     </script>
   </body>
