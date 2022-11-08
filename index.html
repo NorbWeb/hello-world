@@ -22,11 +22,20 @@
       <div id="text" class="display">You shall not pass!</div>
     </div>
     <script>
-      if (!navigator.serviceWorker.controller) {
-          navigator.serviceWorker.register("/sw.js").then(function(reg) {
-              console.log("Service worker has been registered for scope: " + reg.scope);
-          });
+      window.addEventListener("load", () => {
+        registerSW();
+      });
+
+      // Register the Service Worker
+      async function registerSW() {
+        if ("serviceWorker" in navigator) {
+          try {
+            await navigator.serviceWorker.register("serviceworker.js");
+          } catch (e) {
+            console.log("SW registration failed");
+          }
+        }
       }
-     </script>
+    </script>
   </body>
 </html>
