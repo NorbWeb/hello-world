@@ -1,0 +1,8 @@
+io/github/norbweb/twa/BuildConfig.java
+ io.github.norbweb.twa.BuildConfig
+io/github/norbweb/twa/LauncherActivity.java
+ io.github.norbweb.twa.LauncherActivity
+io/github/norbweb/twa/Application.java
+ io.github.norbweb.twa.Application
+io/github/norbweb/twa/DelegationService.java
+ io.github.norbweb.twa.DelegationService
